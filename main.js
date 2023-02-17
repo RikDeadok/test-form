@@ -18,13 +18,14 @@ document.addEventListener('DOMContentLoaded', function () {
         body: formData,
       });
       if (response.ok) {
-        let result = await response.json();
-        alert(result.message);
         form.reset();
         form.classList.remove('_sending');
+        return response.json();
       } else {
-        alert('Ошибка');
         form.classList.remove('_sending');
+        return response.text().then((text) => {
+          throw new Error(text);
+        });
       }
     }
   }

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User form</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <div class="container">
+          <div class="section">
+            <form class="form" method="post" id="form">
+              <div class="form__item">
+                <div class="form__title">Здравствуйте,</div>
+                <div class="form__user">Человек №3596941</div>
+                <div class="status-btn">Сменить статус</div>
+              </div>
+              <div class="form__item">
+                <div class="form__popup popup">
+                  <div class="popup__corner"></div>
+                  <div class="popup__body">
+                    Прежде чем действовать, надо понять
+                  </div>
+                </div>
+              </div>
+              <div class="form__item _mt32">
+                <label class="select__label" for="selectCity">Ваш город</label>
+                <select class="select__input" id="selectCity" name="selectCity">
+                  <option>Пункт 1</option>
+                </select>
+              </div>
+              <div class="_line"></div>
+              <div class="form__item">
+                <label class="text-field__label" for="inputPassword"
+                  >Пароль</label
+                >
+                <input
+                  class="text-field__input _pas _req"
+                  type="password"
+                  id="inputPassword"
+                  name="inputPassword"
+                />
+                <div class="error" id="errorPasswordMessage"></div>
+                <div class="info">
+                  Ваш новый пароль должен содержать не менее 5 символов.
+                </div>
+              </div>
+              <div class="form__item _mt40">
+                <label class="text-field__label" for="inputRePassword"
+                  >Пароль еще раз</label
+                >
+                <input
+                  class="text-field__input _rePas _req"
+                  type="password"
+                  id="inputRePassword"
+                  name="inputRePassword"
+                />
+                <div class="error" id="errorRePasswordMessage"></div>
+                <div class="info">
+                  Повторите пароль, пожалуйста, это обезопасит вас с нами на
+                  случай ошибки.
+                </div>
+              </div>
+              <div class="_line"></div>
+              <div class="form__item">
+                <label class="text-field__label" for="inputEmail"
+                  >Электронная почта</label
+                >
+                <input
+                  class="text-field__input _email _req"
+                  type="text"
+                  id="inputEmail"
+                  name="inputEmail"
+                />
+                <div class="error" id="errorEmailMessage"></div>
+                <div class="info">
+                  Можно изменить адрес, указанный при регистрации.
+                </div>
+              </div>
+              <div class="form__item _mt40">
+                <input
+                  class="checkbox__input"
+                  type="checkbox"
+                  checked
+                  id="inputCheckbox"
+                  name="inputCheckbox"
+                />
+                <label class="checkbox__label" for="inputCheckbox">
+                  принимать актуальную информацию на емейл
+                </label>
+              </div>
+              <div class="form__item _mt40">
+                <div class="form__button">
+                  <button class="button _button-filled" type="submit">
+                    Изменить
+                  </button>
+                  <div class="info">
+                    последние изменения 15 мая 2012 в 14:55:17
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

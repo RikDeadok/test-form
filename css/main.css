@@ -1,0 +1,218 @@
+/* $minWidth: 320;
+$maxWidth: 1440;
+$maxWidthContainer: 1140;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98; */
+
+/* <NULL>================================================================================================================ */
+@import '../css/utils/null.css';
+
+/* <UI>================================================================================================================== */
+@import '../css/utils/ui.css';
+
+/* <BODY>================================================================================================================ */
+html,
+body {
+  background: #e5e5e5;
+  font-family: Arial;
+  font-size: 16px;
+  color: #000000;
+}
+
+/* <WRAPPER>============================================================================================================= */
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+.content {
+  flex: 1 0 auto;
+}
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* <STYLES>============================================================================================================== */
+.form {
+  padding: 90px;
+  background: #ffffff;
+}
+@media (max-width: 1140px) {
+  .form {
+    padding: 45px;
+  }
+}
+@media (max-width: 919px) {
+  .form {
+    padding: 45px 15px;
+  }
+}
+.form__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 223px 335px 168px 189px;
+  padding: 0 10px;
+}
+@media (max-width: 1140px) {
+  .form__item {
+    grid-template-rows: auto auto;
+    grid-template-columns: 335px 168px 189px;
+  }
+}
+@media (max-width: 919px) {
+  .form__item {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+  }
+}
+.form__title {
+  font-size: 30px;
+  line-height: 34px;
+  color: #666666;
+  font-weight: bold;
+}
+@media (max-width: 1140px) {
+  .form__title {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+@media (max-width: 919px) {
+  .form__title {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+.form__user {
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: bold;
+}
+.status-btn {
+  margin: auto 9px 3px auto;
+  font-size: 12px;
+  line-height: 22px;
+  color: #0c77bb;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+@media (max-width: 919px) {
+  .status-btn {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+.form__popup {
+  margin-top: 5px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+@media (max-width: 1140px) {
+  .form__popup {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+.popup {
+  position: relative;
+  padding: 16px 12px;
+  background: #eaeaea;
+}
+.popup__corner {
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  width: 11px;
+  height: 11px;
+  background: #eaeaea;
+  transform: rotate(45deg);
+}
+.popup__body {
+}
+.form__button {
+  display: flex;
+  align-items: center;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+@media (max-width: 1140px) {
+  .form__button {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+.info {
+  margin-left: 15px;
+  color: #999999;
+  font-size: 12px;
+  line-height: 20px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+@media (max-width: 1140px) {
+  .info {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+@media (max-width: 919px) {
+  .info {
+    margin-left: 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}
+._line {
+  width: 100%;
+  height: 1px;
+  margin: 32px 0;
+  border-top: solid 1px #e5e4e4;
+}
+._mt32 {
+  margin-top: 32px;
+}
+._mt40 {
+  margin-top: 40px;
+}
+.error {
+  position: absolute;
+  left: 233px;
+  top: 32px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #ff0000;
+}
+@media (max-width: 1140px) {
+  .error {
+    left: 10px;
+    top: 50px;
+  }
+}
+@media (max-width: 919px) {
+  .error {
+    left: 10px;
+    top: -15px;
+  }
+}

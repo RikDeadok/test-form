@@ -1,0 +1,19 @@
+{
+  "name": "test-form",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RikDeadok/test-form.git"
+  },
+  "author": "Sergey Kovalenko <rikdeadok@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RikDeadok/test-form/issues"
+  },
+  "homepage": "https://github.com/RikDeadok/test-form#readme"
+}

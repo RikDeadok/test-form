@@ -107,6 +107,7 @@ body {
   font-size: 12px;
   line-height: 22px;
   color: #0c77bb;
+  cursor: pointer;
   grid-column-start: 3;
   grid-column-end: 4;
 }
